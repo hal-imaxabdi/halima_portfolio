@@ -23,6 +23,10 @@ export default function HomeSection({ onViewProjects }: HomeSectionProps) {
           <span className="text-zinc-400">Hi, I'm</span> Halima
         </h1>
 
+        <p className="font-mono text-xs sm:text-sm uppercase tracking-[0.2em] text-zinc-400">
+          Cybersecurity &amp; Full-Stack Development
+        </p>
+
         <p className="font-sans text-base sm:text-lg md:text-xl text-zinc-300 leading-relaxed max-w-2xl">
           I build things that need to hold up under pressure, from full-stack web apps to
           tools like a phishing detector I built from scratch. Most days I'm switching
@@ -37,43 +41,6 @@ export default function HomeSection({ onViewProjects }: HomeSectionProps) {
             <span>View Projects</span>
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
           </button>
-        </div>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-        className="hidden sm:block sm:absolute sm:bottom-16 sm:right-6 md:right-10 lg:right-16 z-10 w-56 rounded-xl border border-zinc-800 bg-zinc-950/90 px-4 py-3.5"
-      >
-        <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-dashed border-zinc-800">
-          <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-zinc-400">
-            Status
-          </span>
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-60" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
-          </span>
-        </div>
-
-        <dl className="space-y-1.5 font-mono text-[11px] leading-relaxed">
-          <div className="flex items-baseline justify-between gap-3">
-            <dt className="text-zinc-400">Role</dt>
-            <dd className="text-zinc-200 text-right">Cybersecurity Student</dd>
-          </div>
-          <div className="flex items-baseline justify-between gap-3">
-            <dt className="text-zinc-400">Focus</dt>
-            <dd className="text-zinc-200 text-right">Security &amp; Full-Stack</dd>
-          </div>
-          <div className="flex items-baseline justify-between gap-3">
-            <dt className="text-zinc-400">Location</dt>
-            <dd className="text-zinc-200 text-right">Indonesia</dd>
-          </div>
-        </dl>
-
-        <div className="mt-2.5 pt-2.5 border-t border-dashed border-zinc-800 flex items-center gap-1.5">
-          <span className="text-emerald-400 text-[10px] leading-none">●</span>
-          <span className="font-mono text-[11px] text-zinc-300">Available for Internships</span>
         </div>
       </motion.div>
 
