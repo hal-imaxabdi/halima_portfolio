@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
-import heroImg from "../assets/images/halima-hero.jpg";
 
 interface HomeSectionProps {
   onViewProjects: () => void;
@@ -20,21 +19,6 @@ export default function HomeSection({ onViewProjects }: HomeSectionProps) {
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         className="max-w-4xl mx-auto w-full flex flex-col items-center text-center gap-4 sm:gap-5 relative z-10"
       >
-        {/* Photo */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="relative mb-2"
-        >
-          <div className="absolute inset-0 rounded-full bg-white/5 blur-2xl scale-110" />
-          <img
-            src={heroImg}
-            alt="Halima Abdirizak Mohamed"
-            className="relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full object-cover border border-zinc-800 shadow-2xl shadow-black/40"
-          />
-        </motion.div>
-
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-tight select-none text-white font-bubbly">
           <span className="text-zinc-400">Hi, I'm</span> Halima
         </h1>
